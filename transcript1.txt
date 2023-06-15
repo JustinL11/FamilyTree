@@ -1,0 +1,97 @@
+?- is_cousin(X,Y).
+lucina is cousins with akali
+X = lucina,
+Y = akali ;
+lucina is cousins with niko
+X = lucina,
+Y = niko ;
+false.
+
+?- is_father(king).
+true ;
+true.
+
+?- is_father(marth).
+false.
+
+?- aunt(X,Y).
+X = emerlyn,
+Y = akali ;
+X = emerlyn,
+Y = niko ;
+false.
+
+?- uncle(X,Y).
+X = chrom,
+Y = lucina ;
+false.
+
+?- sibling(X,Y).
+X = Y, Y = akali ;
+X = akali,
+Y = niko ;
+X = Y, Y = ahri ;
+X = niko,
+Y = akali ;
+X = Y, Y = niko ;
+X = Y, Y = chica ;
+X = Y, Y = river ;
+X = Y, Y = river ;
+X = Y, Y = inolynn ;
+X = Y, Y = teddybear ;
+X = Y, Y = emerlyn ;
+X = emerlyn,
+Y = chrom ;
+X = chrom,
+Y = emerlyn ;
+X = Y, Y = chrom ;
+X = Y, Y = lucina.
+
+?- sibling(emerlyn,chrom).
+true.
+
+?- grandmother(X,Y).
+X = akali,
+Y = king ;
+X = niko,
+Y = king ;
+X = river,
+Y = blair ;
+X = lucina,
+Y = king.
+
+?- grandfather(X,Y).
+X = teddybear,
+Y = inolynn ;
+X = teddybear,
+Y = sky ;
+false.
+
+?- ancestor(lucina, king).
+false.
+
+?- ancestor(king, lucina).
+true ;
+false.
+
+?- is_mother(X).
+X = inolynn ;
+X = blair ;
+X = river ;
+X = emerlyn.
+
+?- brother(X,Y).
+X = chrom,
+Y = emerlyn ;
+false.
+
+?- sister(X,Y).
+X = akali,
+Y = niko ;
+X = niko,
+Y = akali ;
+X = emerlyn,
+Y = chrom ;
+false.
+
+?- halt.

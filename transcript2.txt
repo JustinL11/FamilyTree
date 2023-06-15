@@ -1,0 +1,138 @@
+?- not_related(X).
+X = chrom ;
+X = mich ;
+X = chrom ;
+X = markiplier ;
+X = inolynn ;
+X = sky ;
+X = blair ;
+X = river ;
+X = king ;
+X = king ;
+X = emerlyn.
+
+?- is_adult(X).
+sky is an adult!
+X = sky ;
+key is an adult!
+X = key ;
+joshua is an adult!
+X = joshua ;
+lyn is an adult!
+X = lyn ;
+chrom is an adult!
+X = chrom ;
+robin is an adult!
+X = robin ;
+marth is an adult!
+X = marth ;
+markiplier is an adult!
+X = markiplier ;
+king is an adult!
+X = king ;
+inolynn is an adult!
+X = inolynn ;
+yawn is an adult!
+X = yawn ;
+emerlyn is an adult!
+X = emerlyn ;
+akali is an adult!
+X = akali ;
+blair is an adult!
+X = blair ;
+queen is an adult!
+X = queen ;
+false.
+
+?- is_adults_2021(_).
+sky is an adult in 2021. Age - 40
+true ;
+key is an adult in 2021. Age - 38
+true ;
+joshua is an adult in 2021. Age - 42
+true ;
+chrom is an adult in 2021. Age - 32
+true ;
+robin is an adult in 2021. Age - 28
+true ;
+marth is an adult in 2021. Age - 30
+true ;
+markiplier is an adult in 2021. Age - 28
+true ;
+king is an adult in 2021. Age - 52
+true ;
+inolynn is an adult in 2021. Age - 22
+true ;
+yawn is an adult in 2021. Age - 22
+true ;
+emerlyn is an adult in 2021. Age - 28
+true ;
+akali is an adult in 2021. Age - 23
+true ;
+blair is an adult in 2021. Age - 46
+true ;
+queen is an adult in 2021. Age - 48
+true ;
+false.
+
+?- older_than_aunts_uncles(_,_).
+sky is older than chrom <--- The aunt/uncle.
+true ;
+sky is older than emerlyn <--- The aunt/uncle.
+true ;
+sky is older than emerlyn <--- The aunt/uncle.
+true ;
+key is older than chrom <--- The aunt/uncle.
+true ;
+key is older than emerlyn <--- The aunt/uncle.
+true ;
+key is older than emerlyn <--- The aunt/uncle.
+true ;
+joshua is older than chrom <--- The aunt/uncle.
+true ;
+joshua is older than emerlyn <--- The aunt/uncle.
+true ;
+joshua is older than emerlyn <--- The aunt/uncle.
+true ;
+chrom is older than emerlyn <--- The aunt/uncle.
+true ;
+chrom is older than emerlyn <--- The aunt/uncle.
+true ;
+marth is older than emerlyn <--- The aunt/uncle.
+true ;
+marth is older than emerlyn <--- The aunt/uncle.
+true ;
+king is older than chrom <--- The aunt/uncle.
+true ;
+king is older than emerlyn <--- The aunt/uncle.
+true ;
+king is older than emerlyn <--- The aunt/uncle.
+true ;
+blair is older than chrom <--- The aunt/uncle.
+true ;
+blair is older than emerlyn <--- The aunt/uncle.
+true ;
+blair is older than emerlyn <--- The aunt/uncle.
+true ;
+queen is older than chrom <--- The aunt/uncle.
+true ;
+queen is older than emerlyn <--- The aunt/uncle.
+true ;
+queen is older than emerlyn <--- The aunt/uncle.
+true ;
+false.
+
+?- has_kids_less_than_20(_).
+river
+true ;
+false.
+
+?- younger_than_kids(_).
+river is younger than their kid teddybear
+true ;
+?- is_young_parent(_).
+inolynn
+true ;
+false.
+
+?- halt.
